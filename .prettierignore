@@ -1,0 +1,4 @@
+# don't format these files/folders
+build
+coverage
+public
