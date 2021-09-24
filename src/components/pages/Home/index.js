@@ -1,5 +1,13 @@
+import { Hero, RandomLocationPicker } from './components';
+
 function Home() {
-  return <div>This is the homepage.</div>;
+  return (
+    <div>
+      <Hero />
+      <RandomLocationPicker />
+      <div>This is the homepage.</div>
+    </div>
+  );
 }
 
 export default Home;

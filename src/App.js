@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header, Footer } from './components';
 import { Home, Stays, Destinations } from './components/pages';
+import './index.css';
 
 const rootStyle = {
   position: 'relative',
   height: '100vh',
+  backgroundColor: '#F0E5CF',
 };
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
           <Route exact path={['/', '/home']}>
             <Home />
           </Route>
-          <Route path="/destinations">
+          <Route path="/destinationsts">
             <Destinations />
           </Route>
           <Route path="/stays">
