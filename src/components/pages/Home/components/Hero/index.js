@@ -3,12 +3,13 @@ import { Col, Row } from 'react-bootstrap';
 const coverImg = {
   width: '100%',
   height: '75%',
+  // opacity:'0.5'
 };
 
 function Hero() {
   return (
     <div>
-      <container fluid>
+      <container>
         <Row xs={12} md={4} lg={12}>
           <Col xs={12} sm={12} md={12} lg={12}>
             <img src="images/dogMountain.jpg" style={coverImg}></img>
