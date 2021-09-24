@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Container, Navbar } from 'react-bootstrap';
+import { Nav, Container, Navbar, Row, Col } from 'react-bootstrap';
 
 const headerStyle = {
   textAlign: 'center', // text-align: 'center';
@@ -26,8 +26,7 @@ const leftStyle = {
 };
 
 const imageIcon = {
-  width: '13%',
-  height: '13%',
+  width: '20%',
   padding: '0 10px 0 10px',
   filter: 'sepia(40%)',
 };
@@ -38,8 +37,12 @@ function Header() {
       <container>
         <Navbar bg="light" variant="light">
           <Navbar.Brand href="/" style={navbarbrand}>
-            <img src="/paw.png" style={imageIcon}></img>
-            With Pets
+            <Row xs={12} sm={12} md={10} lg={8}>
+              <Col xs={12} sm={12} md={10} lg={10}>
+                <img src="images/paw.png" style={imageIcon}></img>
+                With Pets
+              </Col>
+            </Row>
           </Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link href="/destinations" style={leftStyle}>
