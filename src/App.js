@@ -5,6 +5,8 @@ import { Header, Footer } from './components';
 import { Home, Stays, Destinations } from './components/pages';
 import './index.css';
 
+import './App.css';
+
 const rootStyle = {
   position: 'relative',
   height: '100vh',
