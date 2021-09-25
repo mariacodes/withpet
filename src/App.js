@@ -5,12 +5,10 @@ import { Header, Footer } from './components';
 import { Home, Stays, Destinations } from './components/pages';
 import './index.css';
 
-import './App.css';
-
 const rootStyle = {
   position: 'relative',
   height: '100vh',
-  backgroundColor: '#F0E5CF',
+  backgroundColor: '##F0E5CF',
 };
 
 function App() {
@@ -22,7 +20,7 @@ function App() {
           <Route exact path={['/', '/home']}>
             <Home />
           </Route>
-          <Route path="/destinationsts">
+          <Route path="/destinations">
             <Destinations />
           </Route>
           <Route path="/stays">

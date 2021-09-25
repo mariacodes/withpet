@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Container, Navbar, Row, Col } from 'react-bootstrap';
+import { clearConfigCache } from 'prettier';
 
 const footerStyle = {
   textAlign: 'center',
-  position: 'absolute',
+  position: 'relative',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
   bottom: 0,
   width: '100%',
 };
 
-const navbarbrand = {
-  paddingLeft: '8%',
-  textAlign: 'left',
-  fontFamily: 'Patrick Hand',
-  color: 'grey',
-  fontSize: '55px',
-  margin: '0px',
+const leftStyle = {
+  flex: 1,
+  flexDirection: 'row',
+  justifyContent: 'flex-start',
 };
 
 const rightStyle = {
@@ -26,8 +27,9 @@ const rightStyle = {
 };
 
 const imageIcon = {
-  width: '10',
-  height: '10',
+  alignItems: 'right',
+  width: '10%',
+  height: '65%',
   resizeMode: 'contain',
 };
 
@@ -36,29 +38,57 @@ function Footer() {
     <div style={footerStyle}>
       <Container>
         <Row>
-          <Col sm={12} md={6}>
+          <Col>
             <h3>About</h3>
-            <p class="text-justify">
+            <p>
               Don't travel alone if you don't have to. Share your experiences
               with your furry friends and love every minute of it together.
             </p>
+          </Col>
+          <Col>
+            <h3>Quick Links</h3>
+            <Row>
+              <a href="/home">About Us</a>
+            </Row>
+            <Row>
+              <a href="#">Contact Us</a>
+            </Row>
+            <Row>
+              <a href="#">Share Your Photos</a>
+            </Row>
+            <Row>
+              <a href="#">Privacy Policy</a>
+            </Row>
           </Col>
         </Row>
       </Container>
       <hr />
       <Container>
         <Row>
-          <Col md={8} sm={6} xs={12}>
-            <p class="copyright-text">
+          <Col style={leftStyle}>
+            <p>
               Copyright &copy; 2021 All Rights Reserved by
-              <a href="#">Withpets</a>.
+              <a href="/home">Withpets</a>.
             </p>
           </Col>
-        </Row>
-        <Row style={rightStyle}>
-          <img src="footer_assets/facebook_icon.png" style={imageIcon}></img>
-          <img src="footer_assets/twitter_icon.png" style={imageIcon}></img>
-          <img src="footer_assets/instagram_icon.png" style={imageIcon}></img>
+          <Col style={rightStyle}>
+            <a href="https://www.facebook.com">
+              <img
+                src="footer_assets/facebook_icon.png"
+                style={imageIcon}
+              ></img>
+            </a>
+            <a href="https://www.twitter.com">
+              <img src="footer_assets/twitter_icon.png" style={imageIcon}></img>
+            </a>
+            <a href="https://www.instagram.com">
+              <img
+                src="footer_assets/instagram_icon.png"
+                style={imageIcon}
+              ></img>
+            </a>
+            <p></p>
+          </Col>
         </Row>
       </Container>
     </div>

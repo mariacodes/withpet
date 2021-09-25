@@ -6,6 +6,7 @@ const headerStyle = {
   textAlign: 'center', // text-align: 'center';
   top: 0,
   left: 0,
+  right: 0,
   position: 'relative',
   fontFamily: 'Rubik',
   fixed: 'top',
@@ -26,19 +27,20 @@ const leftStyle = {
 };
 
 const imageIcon = {
+  position: 'right',
   width: '20%',
-  padding: '0 10px 0 10px',
+  //padding: '0 10px 0 10px',
   filter: 'sepia(40%)',
 };
 
 function Header() {
   return (
     <div style={headerStyle}>
-      <container>
+      <Container>
         <Navbar bg="light" variant="light">
           <Navbar.Brand href="/" style={navbarbrand}>
             <Row xs={12} sm={12} md={10} lg={8}>
-              <Col xs={12} sm={12} md={10} lg={10}>
+              <Col xs={12} sm={12} md={10} lg={8}>
                 <img src="images/paw.png" style={imageIcon}></img>
                 With Pets
               </Col>
@@ -53,7 +55,7 @@ function Header() {
             </Nav.Link>
           </Nav>
         </Navbar>
-      </container>
+      </Container>
     </div>
   );
 }
