@@ -8,7 +8,7 @@ import './index.css';
 const rootStyle = {
   position: 'relative',
   height: '100vh',
-  backgroundColor: '##F0E5CF',
+  backgroundColor: '#F0E5CF',
 };
 
 function App() {
