@@ -1,20 +1,28 @@
 import { Col, Row } from 'react-bootstrap';
 
+const heroStyle = {
+  textAlign: 'left',
+  position: 'relative',
+  width: '100%',
+};
+
 const coverImg = {
   width: '100%',
-  height: '75%',
+  height: '100%',
   // opacity:'0.5'
 };
 
 function Hero() {
   return (
-    <div>
+    <div style={heroStyle}>
       <container>
-        <Row xs={12} md={4} lg={12}>
-          <Col xs={12} sm={12} md={12} lg={12}>
+        <Row>
+          <Col>
             <img src="images/dogMountain.jpg" style={coverImg}></img>
-            Hero
           </Col>
+        </Row>
+        <Row>
+          <p>Hero</p>
         </Row>
       </container>
     </div>

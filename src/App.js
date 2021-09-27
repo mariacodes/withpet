@@ -20,7 +20,7 @@ function App() {
           <Route exact path={['/', '/home']}>
             <Home />
           </Route>
-          <Route path="/destinationsts">
+          <Route path="/destinations">
             <Destinations />
           </Route>
           <Route path="/stays">
