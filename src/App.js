@@ -7,7 +7,7 @@ import './index.css';
 
 const rootStyle = {
   position: 'relative',
-  height: '100vh',
+  height: '100%',
   backgroundColor: '#F0E5CF',
 };
 
