@@ -39,5 +39,6 @@ export default Hero;
 
 const HeroContainer = styled.div`
   width: 100%;
-  height: 600px;
+  height: 65vh;
+  padding-bottom: 10vh;
 `;

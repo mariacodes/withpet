@@ -5,7 +5,7 @@ import { clearConfigCache } from 'prettier';
 
 const footerStyle = {
   textAlign: 'center',
-  position: 'fixed',
+  position: 'relative',
   flexDirection: 'row',
   justifyContent: 'space-between',
   alignItems: 'center',

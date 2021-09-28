@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Container, Navbar, Row, Col } from 'react-bootstrap';
 import paw from 'assets/images/paw.png';
 const headerStyle = {
   textAlign: 'center', // text-align: 'center';
-  top: '-70px',
+  top: '-140px',
+  // opacity:0,
   width: '100%',
   position: 'fixed',
   fontFamily: 'Rubik',
   fixed: 'top',
   backgroundColor: '#F7F6F2',
-  transition: 'top 0.3s',
+  transition: 'top 1s',
 };
 
 const navbarbrand = {
@@ -28,24 +29,28 @@ const leftStyle = {
 
 const imageIcon = {
   position: 'right',
-  width: '20%',
+  width: '15%',
   //padding: '0 10px 0 10px',
   filter: 'sepia(40%)',
 };
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('navbar').style.top = '0';
-  } else {
-    document.getElementById('navbar').style.top = '-50px';
-  }
-}
-
 function Header() {
+  function scrollFunction() {
+    console.log('this is executing');
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById('navbar').style.top = '0';
+    } else {
+      document.getElementById('navbar').style.top = '-140px';
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => scrollFunction());
+  });
+
   return (
     <div id="navbar" style={headerStyle}>
       <Navbar bg="light" variant="light">

@@ -1,4 +1,4 @@
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 
 const positionOfButton = {
   transform: 'translate(-50%,-50%)',
@@ -13,11 +13,9 @@ const positionOfButton = {
 function RandomLocationPicker() {
   return (
     <div style={positionOfButton}>
-      <container hover>
-        <Button variant="light" size="lg">
-          Suprise me!
-        </Button>
-      </container>
+      <Button variant="light" size="lg">
+        Suprise me!
+      </Button>
     </div>
   );
 }
