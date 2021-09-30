@@ -1,2 +1,2 @@
 export { default as Hero } from './Hero';
-export { default as RandomLocationPicker } from './RandomLocationPicker';
+export { default as ExploreNearby } from './ExploreNearby';
