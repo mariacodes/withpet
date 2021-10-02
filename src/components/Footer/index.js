@@ -74,16 +74,19 @@ function Footer() {
           <Col style={rightStyle}>
             <a href="https://www.facebook.com">
               <img
-                src="footer_assets/facebook_icon.png"
+                src="images/footer_assets/facebook_icon.png"
                 style={imageIcon}
               ></img>
             </a>
             <a href="https://www.twitter.com">
-              <img src="footer_assets/twitter_icon.png" style={imageIcon}></img>
+              <img
+                src="images/footer_assets/twitter_icon.png"
+                style={imageIcon}
+              ></img>
             </a>
             <a href="https://www.instagram.com">
               <img
-                src="footer_assets/instagram_icon.png"
+                src="images/footer_assets/instagram_icon.png"
                 style={imageIcon}
               ></img>
             </a>

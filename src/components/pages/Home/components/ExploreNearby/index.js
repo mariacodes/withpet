@@ -1,6 +1,7 @@
 const stylingExplore = {
   backgroundColor: 'red',
   width: '100%',
+  position: 'relative',
   paddingTop: '10vh',
   paddingBottom: '10vh',
 };

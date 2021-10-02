@@ -3,7 +3,7 @@ import { Button, Container } from 'react-bootstrap';
 const positionOfButton = {
   transform: 'translate(-50%,-50%)',
   position: 'absolute',
-  top: '50%',
+  top: '40%',
   left: '50%',
   fontSize: '16px',
   color: 'white',
