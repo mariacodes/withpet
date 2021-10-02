@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.HighlightBox {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.HighlightBox:hover {
+  background: aqua;
+}

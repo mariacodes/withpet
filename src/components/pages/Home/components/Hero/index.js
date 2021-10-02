@@ -1,5 +1,5 @@
 import { Col, Row, Container } from 'react-bootstrap';
-import { RandomLocationPicker } from './components';
+import { LocationPicker, RandomLocationPicker } from './components';
 import { CoverImg } from './components/HeaderImageStyle';
 import styled from 'styled-components';
 
@@ -26,6 +26,7 @@ const heroStyle = {
 function Hero() {
   return (
     <HeroContainer>
+      <LocationPicker />
       <CoverImg />
       <RandomLocationPicker />
     </HeroContainer>
@@ -39,6 +40,8 @@ export default Hero;
 
 const HeroContainer = styled.div`
   width: 100%;
-  height: 65vh;
+  height: 100vh;
   padding-bottom: 10vh;
+  position: relative;
+  overflow-hidden;
 `;

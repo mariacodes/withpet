@@ -30,7 +30,6 @@ const SomeContainer = styled.div`
   max-width: 100%;
   min-width: 100%;
   top: 100%;
-
   @media (min-width: 1024 px) {
     flex-wrap: nowrap;
   }
